@@ -45,7 +45,7 @@ public class TurretSubsystem {
 
         //verifica se a limeligt encontrou o alvo válido
 
-        if (llResult == null && !llResult.isValid()) {
+        if (llResult == null || !llResult.isValid()) {
             turret.setPower(0);
             return;
         }
